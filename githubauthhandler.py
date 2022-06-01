@@ -84,7 +84,6 @@ class GHAppAuthHandler(object):
                 check_time >= self.tokens[installation_id]['expires_at']):
             url = "https://api.github.com/app/installations/{}/access_tokens".format(
                 installation_id)
-            print("URL = " + url)
             r = requests.session().post(
                 url,
                 headers={
