@@ -1,4 +1,4 @@
-from gevent.wsgi import WSGIServer
+from gevent.pywsgi import WSGIServer
 import werkzeug.serving
 from request_handler import app
 import json
