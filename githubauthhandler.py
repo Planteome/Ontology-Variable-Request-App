@@ -6,7 +6,7 @@ import random
 import string
 import urllib.parse
 
-from jwt.contrib.algorithms.pycrypto import RSAAlgorithm
+#from jwt.contrib.algorithms.pycrypto import RSAAlgorithm
 try:
     jwt.register_algorithm('RS256', RSAAlgorithm(RSAAlgorithm.SHA256))
 except:
